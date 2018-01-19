@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+
+.burger {
+  position: fixed;
+  cursor: pointer;
+  top: 61px;
+  left: 55px;
+  z-index: 10; }
+  .burger svg {
+    fill: #acaeb1;
+    width: 130px;
+    height: 30px;
+    position: absolute; }
+  .burger.logo-color svg {
+    fill: black; }
+
+aside {
+  position: fixed;
+  height: 945px;
+  width: 0px;
+  z-index: 10;
+  background: white;
+  transition: 0.2s; }
+  aside.visible {
+    width: 314px; }
+    aside.visible .logo, aside.visible .menu, aside.visible .social {
+      display: block; }
+  aside .logo {
+    text-align: center;
+    display: none; }
+  aside .social {
+    margin-top: 62px;
+    text-align: center;
+    display: none; }
+    aside .social a {
+      background: #d9dbdd;
+      border-radius: 50%;
+      width: 40px;
+      display: inline-block;
+      height: 40px;
+      margin-right: 5px; }
+      aside .social a:hover {
+        background: #098bcc; }
+      aside .social a i {
+        color: white;
+        font-size: 23px;
+        line-height: 40px; }
+  aside .menu {
+    padding: 95px 50px 40px;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    position: relative; }
+    aside .menu a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      position: relative;
+      padding: 39px 0 40px;
+      font-size: 18px;
+      letter-spacing: -1px; }
+
+/*# sourceMappingURL=site.css.map */

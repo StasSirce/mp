@@ -1,0 +1,7 @@
+table.table-action tbody td:last-child {
+    width: 210px;
+}
+
+table.table td{
+    word-break: break-all;
+}

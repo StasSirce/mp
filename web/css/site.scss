@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.close_x{
+  position: fixed;
+  cursor: pointer;
+  top: 62px;
+  left: 226px;
+  z-index: 10;
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  cursor: pointer;
+  top: 61px;
+  left: 55px;
+  z-index: 10;
+
+  svg{
+    fill: #acaeb1;
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    overflow:visible;
+
+  }
+
+  &.logo-color{
+    svg{
+      fill:black;
+    }
+  }
+
+
+}
+
+
+aside{
+  position: fixed;
+  height: 100vh;
+  width: 0px;
+  z-index: 10;
+  background: white;
+  transition: width 0.2s;
+  -webkit-transition: width 0.2s;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  &.visible{
+    width: 314px;
+    .logo,.menu,.social{
+
+    }
+  }
+
+
+
+  .menu{
+    height: 100%;
+    padding: 150px 50px 40px;
+    width: 300px;
+
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+
+
+
+    a{
+      display: block;
+      color: black;
+      text-decoration: none;
+      position: relative;
+
+      font-size: 18px;
+      letter-spacing: -1px;
+
+    }
+    .logo{
+      display: block;
+      text-align: center;
+
+    }
+
+    .social{
+      margin-top: 62px;
+      text-align: center;
+
+
+      a{
+        background: #d9dbdd;
+        border-radius: 50%;
+        width: 40px;
+        display: inline-block;
+        height: 40px;
+        margin-right: 5px;
+        &:hover{
+          background: #098bcc;
+        }
+        i{
+          color: white;
+          font-size: 23px;
+          line-height: 40px;
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+
+}
